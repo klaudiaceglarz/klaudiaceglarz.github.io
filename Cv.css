@@ -44,6 +44,10 @@ body {
 #siteTitle {
     font-size: 60px;
     font-family: "headerFont";
+    animation: pulse;
+    animation-duration: 0.2s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
 }
 
 #siteSubtitle {
@@ -58,4 +62,9 @@ body {
     --siteBtnSize: 80px;
     --leftPanelSize: 350px;
     display: flex;
+}
+
+@keyframes pulse {
+    from {font-size: 60px;}
+    to {font-size: 65px;}
 }
