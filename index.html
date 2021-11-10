@@ -2,48 +2,97 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="my-css-file.css">
+    <link rel="stylesheet" href="Cv.css">
+    <link rel="stylesheet" href="info.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="mainPanel.css">
     <meta charset="utf-8">
-    <!-- niezmienne dla wszystkich języków -->
     <meta name="author" content="Klaudia Ceglarz">
-    <!-- autor nie wyświetlany na stronie -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- dopasowanie wielkości okna wg urządzenia  -->
-    <title>My test page</title>
+    <title>CV</title>
 </head>
 
 <body>
-    <div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
+    <div class="container">
+        <header id="siteHeader">
+            <figure class="imgContainer" id="siteLogoContainer">
+                <img alt="Picture of me" id="siteLogo" src="logo.jpg">
+            </figure>
+            <h1 id="siteTitle">Klaudia Ceglarz</h1>
+            <h2 id="siteSubtitle">Curriculum Vitae</h2>
+        </header>
+
+        <section id="content">
+            <div id="siteIcons">
+                <button id="infoBtn" class="imgContainer iconBtn">
+                    <img src="contacticon.png"></button>
+                <button id="githubBtn" class="imgContainer iconBtn">
+                    <img src="githubicon.svg"></button>
+            </div>
+            <div id="leftPanel">
+                <h2>Personal info</h2>
+                <p>e-mail: <a href="mailto:klaudia12@onet.pl" class="leftPanelInfo">klaudia12@onet.pl</a></p>
+                <p>phone number: <a href="tel:+48505016195" class="leftPanelInfo">505016195</a></p>
+                <p>date of birth: <span class="leftPanelInfo">01-06-1998</span></p>
+                <div>address:
+                    <address class="leftPanelInfo">Łąkowa 60B/53, Gdańsk</address>
+                </div>
+            </div>
+            <div id="mainPanel">
+                <div class="mainPanelTab">
+                    <h2 class='mainPanelTabHeader'>
+                        <span>
+                            <span>E</span>xperience
+                        </span>
+                    </h2>
+                    <div class="mainPanelTabContent">
+                        <i>24.11.2017, Warszawa</i><br>
+                        | <b>hostessa/promotorka</b> polskiej marki odzieżowej na targach polskich projektantów
+                        mody<br><br>
+                        <i>16.06.2018-20.08.2018, Niemcy, Augsburg</i><br>
+                        | <b>kelnerka/barmanka</b> w niemieckiej przyjeziornej restauracji „See lounge” (praca sezonowa
+                    </div>
+                </div>
+                <div class="mainPanelTab">
+                    <h2 class="mainPanelTabHeader">
+                        <span>
+                            <span>E</span>ducation
+                        </span>
+
+                    </h2>
+                    <div class="mainPanelTabContent">
+                        | Uniwersytet Marii Curie-Skłodowskiej w Lublinie<br>
+                        kierunek: romanistyka<br>uzyskany tytuł: licencjat<br><br>
+                        | Uniwersytet Gdański<br>kierunek: filologia angielska (obecnie)<br>studia magisterskie
+                    </div>
+                </div>
+                <div class="mainPanelTab">
+                    <h2 class="mainPanelTabHeader">
+                        <span>
+                            <span>S</span>kills and qualifications</span>
+                    </h2>
+                    <div class="mainPanelTabContent"></div>
+                </div>
+                <div class="mainPanelTab">
+                    <h2 class="mainPanelTabHeader">
+                        <span>
+                            <span>H</span>obby & languages</span>
+                    </h2>
+                    <div class="mainPanelTabContent">
+                        <ul>
+                            <li>kuchnia</li>
+                            <li>muzyka, taniec, moda, wizaż, literatura, sztuka, psychologia, kultura, języki obce
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </div>
 
-    <div id="myDiv" class="divs" style="border-top: 2px gold solid;">
-        <!-- jezeli tutaj dodam styl to taki będzie finalny(wyjatek - !important) pomimo zmian w css, bo to ma najwiekszy priorytet (jak to usune to bedzie styl z css) -->
-        <h1>This is heading 1</h1>
-        <p id="greeting">Hello</p>
-        <p class="red">Another paragraph</p>
-    </div>
 
-    <h3>Heading 3</h3>
-    <p class="red">bye</p>
-    <p><b>alternative</b></p>
-    <p><strong>one</strong></p>
-    <p><i>One</i> <u>Two</u></p>
-    <a href="" class="btn">lalalasl</a>
-    <h4>This is heading 4</h1>
-        <p id="greeting">Hi</p>
-        <p class="red">Another paragraph</p>
-        <img src="https://johndog.pl/wp-content/uploads/2019/07/Szelki-bezuciskowe-John-Dog-Barcelona-NEW_CJDPEL_K_3.jpg"
-            alt="My test image">
-
-        <p><a href="https://www.mozilla.org/" title="The Mozilla homepage">Link</a>
-            <br>
-            <input type="password">
-
-
+    <script src="site.js"></script>
 </body>
 
 </html>
