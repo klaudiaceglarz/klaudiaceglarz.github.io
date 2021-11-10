@@ -1,0 +1,71 @@
+
+
+#siteIcons {
+    position: sticky;
+    top: 15px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    width: var(--siteBtnSize);
+}
+#siteIcons.opening {
+    left: var(--leftPanelSize);
+}
+.iconBtn {
+    width: var(--siteBtnSize);
+    height: var(--siteBtnSize);
+    cursor: pointer;
+}
+
+
+
+#githubBtn {
+    padding: 10px;
+} 
+
+#leftPanel {
+    position: fixed;
+    width: var(--leftPanelSize);
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    background-image: repeating-linear-gradient(67.5deg, hsla(145,0%,97%,0.2) 0px, hsla(145,0%,97%,0.2) 0px,transparent 0px, transparent 1px,hsla(145,0%,97%,0.2) 1px, hsla(145,0%,97%,0.2) 4px,transparent 4px, transparent 5px,hsla(145,0%,97%,0.2) 5px, hsla(145,0%,97%,0.2) 8px),repeating-linear-gradient(0deg, hsla(145,0%,97%,0.2) 0px, hsla(145,0%,97%,0.2) 0px,transparent 0px, transparent 1px,hsla(145,0%,97%,0.2) 1px, hsla(145,0%,97%,0.2) 4px,transparent 4px, transparent 5px,hsla(145,0%,97%,0.2) 5px, hsla(145,0%,97%,0.2) 8px),linear-gradient(135deg, rgb(237, 237, 237),rgb(199, 199, 199));
+    color: rgb(0, 0, 0);
+    transition: all 0.3s ease;
+    border-right: 2px solid lightgray;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 6px 1px lightgray;
+}
+
+#leftPanel.opening {
+    left: 0;
+
+}
+
+#leftPanel h2 {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+#leftPanel > * {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#leftPanel > *:not(:last-child) {
+    margin: 0 0 10px 0;
+}
+
+.leftPanelInfo {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-style: italic;
+    display: block;
+    font-weight: normal;
+}

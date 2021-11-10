@@ -1,0 +1,130 @@
+/*
+ p,div < .klasa < #id < style w htmlu < !important
+*/
+* {
+    box-sizing: border-box;
+}
+
+p, h4 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color:rgb(129, 194, 194);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+h3 {
+    color: rgb(157, 157, 238);
+}
+
+p.red {
+    color: rgba(207, 50, 50, 0.384);
+}
+
+/* .btn {
+    display: block;
+    background: lime;
+    padding: 20px 50px;
+    border: 1px solid red;
+    margin: 50px 20px;
+    width: 200px;
+    height: 50px;
+    box-sizing: border-box;
+} */
+
+div p {
+    font-style: italic;
+}
+
+h3 + p {
+    font-size: larger;
+}
+
+#greeting {
+    font-size: 40px;
+}
+
+a:hover {
+    font-size: 40px;
+}
+
+#myDiv {
+    border-top: 10px red dotted;
+    border-bottom: 5px green solid;
+    border-left: 3px black solid;
+    padding-left: 4px;
+    margin-left: 50px;
+    padding: 10px 15px;
+}
+
+#myDiv {
+    border-top: 10px yellow dotted;
+}
+/*s będzie zolty bo czyta ostatnia zmiane */
+
+/* .divs {
+    border-top: 3px blueviolet solid;
+} */
+
+div {
+    border-top: 5px gold solid;
+}
+
+div div {
+    border-top: 6px blue solid;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    display: flex;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    flex: 1;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: gold;
+    color: white;
+}
+
+.test > a{
+    background: red;
+
+}
+
+img {
+    max-width: 500px;
+}
+/* dopasowanie zdjęcia do ekranu - nie działa*/
+
+#myDiv h1 {
+    font-size: 10vw;
+}
+#myDiv p {
+    font-size: 5vw;
+}
+/* responsywny tekst - przesuwa się jak zmieniamy rozmiar ekranu */
+
+@media screen and (min-width: 600px) {
+    #myDiv  {
+        width: 90%;
+    }
+}
+/* dopasowanie tekstu do ekranu */

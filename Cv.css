@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "headerFont";
+    src: url("./Cherolina.otf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border: 0;
+    background: none;
+}
+
+body {
+    padding: 10px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    flex: 1;
+    border: 2px solid lightgray;
+}
+
+#siteHeader {
+    border-bottom: 2px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px 15px;
+}
+
+#siteLogoContainer {
+    --size: 220px;
+    width: var(--size) ;
+    height: var(--size);
+    border-radius: 50%;
+}
+
+
+#siteTitle {
+    font-size: 60px;
+    font-family: "headerFont";
+}
+
+#siteSubtitle {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-style: italic;
+    color: rgb(161, 159, 159);
+}
+
+#content {
+    position: relative;
+    --siteBtnSize: 80px;
+    --leftPanelSize: 350px;
+    display: flex;
+}
