@@ -16,6 +16,7 @@
     width: var(--siteBtnSize);
     height: var(--siteBtnSize);
     cursor: pointer;
+    background: white;
 }
 
 
